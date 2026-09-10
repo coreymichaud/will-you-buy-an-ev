@@ -21,9 +21,6 @@ dependencies = [
     "wandb>=0.30.0",
 ]
 
-[project.scripts]
-will-you-buy-an-ev = "will_you_buy_an_ev:main"
-
 [build-system]
 requires = ["uv_build>=0.12.5,<0.13.0"]
 build-backend = "uv_build"
