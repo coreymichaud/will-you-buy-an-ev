@@ -19,6 +19,10 @@ This repo isn't just a notebook with a `.fit()` call. It's structured like a pro
 - ⚙️ A **Makefile-driven pipeline** (`download → train → inference`) so the whole project runs with one command
 - 📦 Modern Python tooling (`uv`, `pyproject.toml`, `ruff`) instead of a loose pile of scripts
 
+## Results
+
+The final model achieved a **ROC AUC of 0.94**. Full EDA and SHAP-based interpretability plots live in the [`notebooks/`](notebooks) directory, with exported figures in [`figures/`](figures).
+
 ## Project Structure
 
 ```
@@ -59,10 +63,6 @@ will-you-buy-an-ev/
 | **Data** | pandas, NumPy, KaggleHub |
 | **Visualization** | Matplotlib, Plotly, Kaleido |
 | **Tooling** | uv (dependency management), Ruff (linting), python-dotenv |
-
-## Results
-
-The final model achieved a **ROC AUC of 0.94**. Full EDA and SHAP-based interpretability plots live in the [`notebooks/`](notebooks) directory, with exported figures in [`figures/`](figures).
 
 ## Setup & Running
 
