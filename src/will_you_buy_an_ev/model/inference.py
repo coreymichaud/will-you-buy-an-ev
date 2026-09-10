@@ -1,12 +1,12 @@
 import joblib
-from will_you_buy_an_ev.config.paths import RAW_DATA_PATH, MODEL_PATH
+from will_you_buy_an_ev.config.paths import RAW_DATA_PATH, MODELS_PATH
 import pandas as pd
 
 # Load test
 test = pd.read_csv(RAW_DATA_PATH / "test.csv")
 
 # Load model
-pipe = joblib.load(MODEL_PATH / "lgbmc.joblib")
+pipe = joblib.load(MODELS_PATH / "lgbmc.joblib")
 
 # The Mode Collapse Spike
 test['is_30k_spike'] = (test['Annual_Income_USD'] == 30000.0).astype('int8')
@@ -19,3 +19,4 @@ test['is_dead_zone'] = ((test['Annual_Income_USD'] >= 38000.0) & (test['Annual_I
 
 probs = pipe.predict_proba(test.drop(columns = ["id"]))
 preds = probs[:,1]
+print(preds)
