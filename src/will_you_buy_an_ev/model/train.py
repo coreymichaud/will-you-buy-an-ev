@@ -3,10 +3,9 @@ import numpy as np
 import joblib
 
 from lightgbm import LGBMClassifier
-from sklearn.model_selection import cross_val_score
 from sklearn.pipeline import Pipeline
 
-from will_you_buy_an_ev.config.paths import RAW_DATA_PATH, MODEL_PATH
+from will_you_buy_an_ev.config.paths import RAW_DATA_PATH, MODELS_PATH
 from will_you_buy_an_ev.data.feature_engineer import create_features
 from will_you_buy_an_ev.data.preprocess import get_preprocessor
 from will_you_buy_an_ev.hyperparameters.best_parameters import get_best_params
@@ -45,4 +44,5 @@ pipe = Pipeline([("preprocessor", preprocessor), ("classifier", lgbmc_tuned)])
 pipe.fit(X, y)
 
 # Save model
-joblib.dump(pipe, MODEL_PATH / "lgbmc.joblib")
+MODELS_PATH.mkdir(parents=True, exist_ok=True)
+joblib.dump(pipe, MODELS_PATH / "lgbmc.joblib")
