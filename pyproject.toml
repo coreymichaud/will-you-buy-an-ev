@@ -12,6 +12,7 @@ dependencies = [
     "kagglehub>=1.0.2",
     "kaleido>=1.4.0",
     "lightgbm>=4.7.0",
+    "matplotlib>=3.11.1",
     "nbformat>=5.11.1",
     "numpy>=2.5.3",
     "pandas>=3.0.5",
