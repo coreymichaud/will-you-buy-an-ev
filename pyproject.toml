@@ -1,13 +1,21 @@
 [project]
 name = "will-you-buy-an-ev"
 version = "0.1.0"
-description = "Add your description here"
+description = "An end-to-end machine learning project for predicting EV purchase likelihood, including data preprocessing, feature engineering, model training, and evaluation."
 readme = "README.md"
 authors = [
     { name = "Corey Michaud", email = "cor3y.michaud@gmail.com" }
 ]
 requires-python = ">=3.14"
-dependencies = []
+dependencies = [
+    "lightgbm>=4.7.0",
+    "numpy>=2.5.3",
+    "pandas>=3.0.5",
+    "plotly>=7.0.0",
+    "scikit-learn>=1.9.0",
+    "shap>=0.52.0",
+    "wandb>=0.30.0",
+]
 
 [project.scripts]
 will-you-buy-an-ev = "will_you_buy_an_ev:main"
@@ -15,3 +23,9 @@ will-you-buy-an-ev = "will_you_buy_an_ev:main"
 [build-system]
 requires = ["uv_build>=0.12.5,<0.13.0"]
 build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "ipykernel>=7.3.0",
+    "ruff>=0.16.6",
+]
