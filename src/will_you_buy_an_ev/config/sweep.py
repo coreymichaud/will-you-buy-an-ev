@@ -2,15 +2,8 @@
 sweep_config = {
     "method": "bayes",
     "name": "bayes-optimization-lgbmclassifier",
-    "metric": {
-        "name": "roc_auc",
-        "goal": "maximize"
-    },
-    "early_terminate": {
-        "type": "hyperband",
-        "min_iter": 10,
-        "eta": 2
-    },
+    "metric": {"name": "roc_auc", "goal": "maximize"},
+    "early_terminate": {"type": "hyperband", "min_iter": 10, "eta": 2},
     "parameters": {
         "n_estimators": {"values": [100, 200, 500, 1000]},
         "learning_rate": {"min": 0.01, "max": 0.3},
@@ -21,5 +14,5 @@ sweep_config = {
         "colsample_bytree": {"min": 0.5, "max": 1.0},
         "reg_alpha": {"min": 0.0, "max": 5.0},
         "reg_lambda": {"min": 0.0, "max": 5.0},
-    }
+    },
 }
