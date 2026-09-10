@@ -1,0 +1,17 @@
+[project]
+name = "will-you-buy-an-ev"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Corey Michaud", email = "cor3y.michaud@gmail.com" }
+]
+requires-python = ">=3.14"
+dependencies = []
+
+[project.scripts]
+will-you-buy-an-ev = "will_you_buy_an_ev:main"
+
+[build-system]
+requires = ["uv_build>=0.12.5,<0.13.0"]
+build-backend = "uv_build"
