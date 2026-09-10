@@ -6,7 +6,7 @@ An end-to-end machine learning project for predicting EV purchase likelihood, in
 
 ## Overview
 
-This project predicts **whether a given customer will buy an electric vehicle (`Will_Buy_EV`)**, based on demographic, behavioral, and infrastructure-related features like income, environmental concern, subsidy availability, range anxiety, and charging access. The data comes from [Electric Vehicle purchase demographic](https://www.kaggle.com/competitions/playground-series-s6e9).
+This project predicts **whether a given customer will buy an electric vehicle (`Will_Buy_EV`)**, based on demographic, behavioral, and infrastructure-related features like income, environmental concern, subsidy availability, range anxiety, and charging access. The data comes from [Electric Vehicle purchase information](https://www.kaggle.com/competitions/playground-series-s6e9).
 
 The data has its own quirks and patterns, which made it a good test for practicing the parts of a modeling project that actually matter: careful EDA, thoughtful preprocessing, feature engineering, model tuning, and interpretability. Models are evaluated using **ROC AUC**.
 
