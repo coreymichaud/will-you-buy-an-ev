@@ -17,3 +17,6 @@ wheels/
 
 # Kaggle complete files
 *.complete
+
+# Ruff
+.ruff_cache/
