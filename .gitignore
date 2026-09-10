@@ -14,3 +14,6 @@ wheels/
 
 # CSV
 *.csv
+
+# Kaggle complete files
+*.complete
