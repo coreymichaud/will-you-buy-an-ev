@@ -1,4 +1,4 @@
-# Will You Buy an EV? 🔋🚗
+# Will You Buy an EV?
 
 An end-to-end machine learning project for predicting EV purchase likelihood, including data preprocessing, feature engineering, model training, and evaluation.
 
