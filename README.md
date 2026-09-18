@@ -54,7 +54,7 @@ will-you-buy-an-ev/
 │       ├── train.py                     # Trains the final model
 │       └── inference.py                 # Runs inference / evaluation
 ├── .env.example                         # Template for Kaggle & W&B credentials
-├── Makefile                             # One-command pipeline: install → download → train → inference
+├── Makefile                             # Commands for install → download → train → inference
 ├── pyproject.toml                       # Dependencies & project metadata (managed with uv)
 └── uv.lock
 ```
