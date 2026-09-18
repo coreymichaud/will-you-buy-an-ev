@@ -23,6 +23,12 @@ This repo isn't just a notebook with a `.fit()` call. It's structured like a pro
 
 The final model achieved a **ROC AUC of 0.94**. Full EDA and SHAP-based interpretability plots live in the [`notebooks/`](notebooks) directory, with exported figures in [`figures/`](figures).
 
+## Live Demo
+
+[Check out the live dashboard](https://will-you-buy-an-ev.streamlit.app/) if you want to test the model out yourself!
+
+[<img src="assets/streamlit-dashboard.png" width="1200">](https://will-you-buy-an-ev.streamlit.app/)
+
 ## Project Structure
 
 ```
@@ -124,12 +130,3 @@ make all
 ```
 
 Run `make help` at any time to see all available targets.
-
-## Upcoming Features
-
-1. **Streamlit** for a hosted UI to test the model
-2. **Containerization** with Docker for reproducibility
-
-## Out of Scope
-
-Productionizing the LightGBM model into an API with FastAPI is out of scope for this project. Hosting it on Streamlit Community Cloud is free, but that would require putting the API behind a separate hosted service, which isn't free and defeats the point of keeping this project cost-free to run.
