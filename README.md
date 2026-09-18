@@ -27,7 +27,7 @@ The final model achieved a **ROC AUC of 0.94**. Full EDA and SHAP-based interpre
 
 [Check out the live dashboard](https://will-you-buy-an-ev.streamlit.app/) if you want to test the model out yourself!
 
-[<img src="assets/streamlit-dashboard.png" width="1200">](https://will-you-buy-an-ev.streamlit.app/)
+[![Streamlit dashboard](assets/streamlit-dashboard.png)](https://will-you-buy-an-ev.streamlit.app/)
 
 ## Project Structure
 
