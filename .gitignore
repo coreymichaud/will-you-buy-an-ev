@@ -20,6 +20,3 @@ wheels/
 
 # Ruff
 .ruff_cache/
-
-# Models
-*.joblib
